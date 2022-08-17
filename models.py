@@ -12,7 +12,7 @@ class genre(str, Enum):
 class Movie(BaseModel):
     title: str
     director: str 
-    movie_genre: List[genre]
+    movie_genre: genre
     age_rating: int
     id : Optional[UUID] = uuid4()
 
