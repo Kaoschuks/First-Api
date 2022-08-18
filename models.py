@@ -17,3 +17,9 @@ class Movie(BaseModel):
     id : Optional[UUID] = uuid4()
 
 
+class updateMovie(BaseModel):
+    title: Optional[str]
+    director:  Optional[str]
+    movie_genre: Optional[str]
+    age_rating: Optional[int]
+    
