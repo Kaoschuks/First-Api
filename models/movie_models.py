@@ -22,4 +22,3 @@ class updateMovie(BaseModel):
     director:  Optional[str]
     movie_genre: Optional[str]
     age_rating: Optional[int]
-    

@@ -1,11 +1,10 @@
 from http.client import HTTPException
 import imp
-from re import A
 from turtle import title
 from fastapi import FastAPI, HTTPException
 from typing import List
 from uuid import UUID, uuid4
-from models import Movie, genre, updateMovie
+from models.movie_models import Movie, genre, updateMovie
 import requests
 
 app = FastAPI()
