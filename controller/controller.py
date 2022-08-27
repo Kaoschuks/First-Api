@@ -8,12 +8,11 @@ def showAll():
     return showAllView(movies_in_db)
 
 def start():
-    
- #input = raw_input() how to?
+    startView()
     if input == 'y':
         return showAll()
     else:
-        return pass
+        return 
 
 if __name__ == "__main__":
     start()
