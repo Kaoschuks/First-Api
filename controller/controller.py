@@ -8,7 +8,7 @@ def showAll():
     return showAllView(movies_in_db)
 
 def start():
-    view.startView()
+    
  #input = raw_input() how to?
     if input == 'y':
         return showAll()
