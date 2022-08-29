@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from movieListView import *
+from views.movieListView import *
 
 app = FastAPI()
 
@@ -12,7 +12,7 @@ def start():
     if input == 'y':
         return showAll()
     else:
-        return 
+        return endView()
 
 if __name__ == "__main__":
-    start()
+    start(
