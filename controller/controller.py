@@ -4,7 +4,7 @@ from views.movieListView import *
 app = FastAPI()
 
 def showAll():
-    movies_in_db = get_movies
+    movies_in_db = get_movies()
     return showAllView(movies_in_db)
 
 def start():
@@ -15,4 +15,4 @@ def start():
         return endView()
 
 if __name__ == "__main__":
-    start(
+    start()

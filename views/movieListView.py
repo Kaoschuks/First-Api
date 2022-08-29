@@ -10,7 +10,7 @@ app = FastAPI()
 @app.get("/items/")
 async def get_movies():
     for movie in movielist:
-        pass #print(movie) 
+        return movie
 
 
 def showAllView(movielist : List[Movie]):
